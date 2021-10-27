@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --main-grey: rgb(60,60,60);
+    color: var(--main-grey);
+}
+
+.mobile {
+    display: none;
+}
+
+header {
+    height: 64px;
+    position: sticky;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+#logo {
+    display: flex;
+    padding-left: 24px;
+    height: 32px;
+}
+
+#logo img {
+    height: 100%;
+}
+
+#logo span {
+    line-height: 32px;
+}
+
+.logoword1 {
+    font-weight: bold;
+    color: black;
+}
+
+.logoword2 {
+    color: lightgrey;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    padding-right: 24px;
+}
+
+nav ul li {
+    color: black;
+}
+
+.banner {
+    display: flex;
+    align-content: center;
+    background-color: lightgrey;
+}
+
+.bannerimg {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.bannerimg img {
+    width: 100%;
+}
+
+.bannerinfo {
+    width: 40%;
+    padding: 24px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bannerinfo p {
+    padding-bottom: 16px;
+}
+
+.bannerinfo a {
+    color: white;
+    background-color: var(--main-grey);
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.bannerinfo a:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.information {
+    display: flex;
+}
+
+.informationimg {
+    width: 60%;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.informationimg p {
+    padding: 24px 0px;
+    color: grey;
+    font-size: 0.8em;
+}
+
+.informationimg cite {
+    font-style: normal;
+    font-size: 0.8em;
+}
+
+.informationimg img {
+    width: 100%;
+}
+
+.informationlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    border-left: 1px solid lightgrey;
+}
+
+.orientation, .our-campus, .guest-lecture {
+    display: flex;
+    padding: 16px;
+
+}
+
+.information-description {
+    width: 65%;
+    padding-left: 16px;
+    font-size: 0.8em;
+}
+
+.informationlist article:hover {
+    background-color: lightgrey;
+}
+
+.informationlist img {
+    width: 35%;
+}
+
+.informationlist p {
+    padding: 8px 0px;
+}
+
+.informationlist a {
+    color: rgb(0, 190, 190);
+    text-decoration: none;
+}
+
+.courses {
+    background-color: lightgrey;
+}
+
+.courses h1 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.learninglist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px 72px;
+}
+
+.learningitem {
+    flex-basis: 30%;
+    background-color: white;
+}
+
+.learningitem:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.learningitem img {
+    width: 100%;
+}
+
+.learning-description {
+    padding: 16px;
+}
+
+.learningitem h1 {
+    text-align: left;
+    font-weight: normal;
+}
+
+.learningitem h2 {
+    font-size: 0.8em;
+    padding: 8px 0px;
+    color: grey;
+    font-weight: normal;
+}
+
+.learningitem p {
+    color: grey;
+    font-size: 0.8em;
+}
+
+.thesis h1 {
+    text-align: center;
+    padding-top: 32px;
+}
+
+.thesiscontainer {
+    display: flex;
+} 
+
+.thesisvideo {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.thesisvideo video {
+    width: 100%;
+}
+
+.thesisvideo h1 {
+    padding-top: 24px;
+    padding-bottom: 8px;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.thesisvideo p {
+    padding-bottom: 32px;
+    font-size: 0.8em;
+    color: grey;
+}
+
+.thesislist {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 32px 0px;
+}
+
+.thesisinformation {
+    display: flex;
+    padding: 16px;
+}
+
+.thesisinformation img {
+    width: 35%;
+    padding-right: 16px;
+}
+
+.thesisdescription {
+    width: 65%;
+    font-size: 0.8em;
+}
+
+.thesisdescription h1 {
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-top: 1px solid lightgrey;
+}
+
+
+@media only screen and (max-width: 700px) {
+    
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 25%;
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: space-around;
+        gap: 0px;
+        width: 75%;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .bannerimg {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .bannerinfo {
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    .informationlist {
+        width: 100%;
+    }
+
+    .informationlist article {
+        flex-direction: column;
+    }
+
+    .informationlist img {
+        width: 100%;
+    }
+
+    .information-description {
+        width: 100%;
+        padding-top: 16px;
+    }
+
+    .courses {
+        background-color: white;
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .learninglist {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        padding: 16px;
+        padding-bottom: 32px;
+    }
+
+    .learning-description {
+        padding: 0px;
+    }
+
+    .learningitem h1 {
+        padding: 16px;
+        background-color: lightgrey;
+    }
+
+    .learningitem h1:hover {
+        background-color: grey;
+        cursor: pointer;
+    }
+
+    .thesisvideo {
+        width: 100%;
+        padding: 0px;
+        padding-top: 16px;
+    }
+}
